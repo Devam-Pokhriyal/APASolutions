@@ -1,0 +1,305 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color:white;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #3498db;
+}
+
+section {
+    color: gray;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e7e7e7;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.company-overview img,
+.services img,
+.team img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.company-overview img:hover,
+.services img:hover,
+.team img:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #7f8c8d;
+}
+
+.service:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.service:hover h3 {
+    color: white;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #7f8c8d;
+}
+
+.team-member:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.team-member:hover h3 {
+    color: white;
+}
+
+/* YouTube Section */
+iframe {
+    width: 80%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+
+/* Responsive Design for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+    .services, .team {
+        flex-direction: column;
+    }
+
+    .service, .team-member {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    iframe {
+        width: 90%;
+        height: 350px;
+    }
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header a {
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .services, .team {
+        flex-direction: column;
+    }
+
+    .service, .team-member {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .service h3, .team-member h3 {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design for Small Phones */
+@media (max-width: 576px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header a {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .services, .team {
+        flex-direction: column;
+    }
+
+    .service, .team-member {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .service h3, .team-member h3 {
+        font-size: 1.1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive Design for Laptops */
+@media (min-width: 1025px) {
+    section {
+        padding: 80px 40px;
+    }
+
+    .section-header h2 {
+        font-size: 3rem;
+    }
+
+    .service, .team-member {
+        width: 28%;
+    }
+
+    iframe {
+        width: 80%;
+        height: 450px;
+    }
+}
